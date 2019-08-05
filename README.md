@@ -5,3 +5,9 @@ demo project for [jenkins-configuration-as-code-all-in-docker](https://github.co
 ## see in branch develop
 
 ## status **WIP**
+
+## source form here
+
+```txt
+https://stackoverflow.com/questions/49439413/jenkins-pipeline-iteration-on-stage-level
+```
