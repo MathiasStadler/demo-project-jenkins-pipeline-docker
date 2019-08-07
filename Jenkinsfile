@@ -1,4 +1,4 @@
-job('example-1') {
+freeStyleJob('config-docker-plugin') {
     scm {
         git {
             remote("${GITHUB_URL}")
