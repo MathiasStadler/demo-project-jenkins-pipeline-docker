@@ -1,17 +1,24 @@
-freeStyleJob('example') {
-    scm {
-        git {
-            remote("${GITHUB_URL}")
-            branches('jenkins-with-docker-plugin')
-            extensions {
-                cleanAfterCheckout()
-                
+pipeline {
+    agent any
+    stages {
+        stage(' check out') {
+            scm {
+                git {
+                    remote("${GITHUB_URL}")
+                    branches('jenkins-with-docker-plugin')
+                    extensions {
+                        cleanAfterCheckout()
+
+                    }
+                }
             }
         }
-    }
-    steps {
-        systemGroovyCommand(readFileFromWorkspace('add-docker-cloud.groovy')) {
-            
+        stage('config cloud') {
+            steps {
+                systemGroovyCommand(readFileFromWorkspace('add-docker-cloud.groovy')) {
+
+                }
+            }
         }
     }
 }
