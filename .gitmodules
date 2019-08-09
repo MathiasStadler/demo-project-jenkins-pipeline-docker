@@ -1,4 +1,4 @@
 [submodule "jenkins"]
 	path = jenkins
 	url = https://github.com/MathiasStadler/jenkins-configuration-as-code-all-in-docker.git
-    branch = add-docker-plugin-init-groovy-d
+    branch = add-docker-plugin-via-casc

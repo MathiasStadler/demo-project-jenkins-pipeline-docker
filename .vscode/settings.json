@@ -4,6 +4,7 @@
   "jenkins.pipeline.linter.connector.user": "admin",
 "jenkins.pipeline.linter.connector.pass": "admin",
 "cSpell.words": [
-    "Jenkinsfile"
+  "Jenkinsfile",
+  "casc"
 ]
 }
